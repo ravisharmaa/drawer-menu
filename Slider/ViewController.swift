@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     func layoutUI() {
         addChild(menuViewController)
         view.addSubview(menuViewController.view)
+        menuViewController.didMove(toParent: self)
         
         menuViewleadingConstraint =  menuViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -(view.frame.width - 100))
         
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
         
         addChild(mainViewController)
         view.addSubview(mainViewController.view)
+        mainViewController.didMove(toParent: self)
 
         mainViewController.view.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
 
@@ -65,9 +67,7 @@ class ViewController: UIViewController {
         
         mainViewLeadingConstraint?.constant = state ? -20: 0
         
-        let duration: Double = state ? 0.3 : 0.4
-        
-        UIView.animate(withDuration: duration) { self.view.layoutIfNeeded() }
+        UIView.animate(withDuration: 0.4) { self.view.layoutIfNeeded() }
         
         state = !state
     }
