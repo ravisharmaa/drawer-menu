@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         view.addSubview(mainViewController.view)
         mainViewController.didMove(toParent: self)
 
-        mainViewController.view.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        //mainViewController.view.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
 
         mainViewLeadingConstraint = mainViewController.view.leadingAnchor.constraint(equalTo: menuViewController.view.trailingAnchor)
         mainViewLeadingConstraint?.isActive = true
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             mainViewController.view.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             mainViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            mainViewController.view.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor)
+            mainViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     

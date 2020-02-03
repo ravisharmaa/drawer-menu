@@ -21,8 +21,7 @@ class MainViewController: UIViewController {
         NSLayoutConstraint.activate([
             profileLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             profileLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            profileLabel.heightAnchor.constraint(equalToConstant: 25),
-            profileLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 50)
+            profileLabel.heightAnchor.constraint(equalToConstant: 25)
         ])
     }
 }
