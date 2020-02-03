@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Slider
-//
-//  Created by Ravi Bastola on 2/3/20.
-//  Copyright © 2020 Ravi Bastola. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
